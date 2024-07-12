@@ -18,7 +18,7 @@ class LanguageSelector extends ConsumerWidget {
     final selectedLanguage = ref.watch(selectedLanguageProvider);
 
     return Container(
-      margin: const EdgeInsets.only(right: 210),
+      margin: const EdgeInsets.only(right: 110),
       padding: const EdgeInsets.only(left: 10),
       height: 40,
       width: 73,

@@ -9,7 +9,7 @@ class AppStrings {
   static const String failedDataLoaderText = "Failed to load data";
   static const String languageText =" Languages";
   static const String failedToLoadLanguageErrorMsg = "Failed to load languages";
-  static const String failedToLoadFilterErrorMsg = "Failed to load filters";
+  static const String failedToLoadFilterErrorMsg = "Failed to load country data. Please check your connection.";
 
 
 

@@ -16,6 +16,7 @@ class FilterModal extends ConsumerWidget {
     final isDarkMode = ref.watch(themeProvider);
 
     return Container(
+      margin: const EdgeInsets.only(left: 55),
       padding: EdgeInsets.only(left: 5),
       height: 40,
       width: 73,
@@ -328,8 +329,8 @@ class FilterModal extends ConsumerWidget {
                                       : AppColors.buttonDarkBorderColor,
                                   width: 1),
                               shape: const RoundedRectangleBorder(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(4),
+                                borderRadius: BorderRadius.all(
+                                 Radius.circular(4),
                                 ),
                               ),
                               padding: EdgeInsets.zero,
@@ -352,6 +353,7 @@ class FilterModal extends ConsumerWidget {
                               ),
                             ),
                           ),
+                          10.w,
                           ElevatedButton(
                             onPressed: () {
                               Navigator.pop(context);
@@ -363,7 +365,7 @@ class FilterModal extends ConsumerWidget {
                                   borderRadius: BorderRadius.circular(4)),
                             ),
                             child: const SizedBox(
-                              width: 236,
+                              width: 190,
                               height: 48,
                               child: Center(
                                 child: Text(
