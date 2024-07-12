@@ -20,6 +20,7 @@ class LabeledValueText extends StatelessWidget {
           TextSpan(
             text: '$label: ',
             style: TextStyle(
+              fontFamily: "Axiforma",
               fontSize: 18,
               color: color,
             ),
@@ -27,6 +28,7 @@ class LabeledValueText extends StatelessWidget {
           TextSpan(
             text: value,
             style: TextStyle(
+              fontFamily: "Axiforma",
               fontSize: 16,
               color: color,
             ),

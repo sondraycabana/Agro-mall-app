@@ -44,6 +44,7 @@ class FilterModal extends ConsumerWidget {
             8.w,
             Text(AppStrings.filter,
                 style: TextStyle(
+                    fontFamily: "Axiforma",
                     color: isDarkMode ? AppColors.whiteColor : AppColors.blackColor)),
           ],
         ),
@@ -90,6 +91,7 @@ class FilterModal extends ConsumerWidget {
                         Text(
                           AppStrings.filter,
                           style: TextStyle(
+                              fontFamily: "Axiforma",
                               color: isDarkMode ?AppColors.whiteColor : AppColors.blackColor,
                               fontSize: 18,
                               fontWeight: FontWeight.bold),
@@ -116,6 +118,7 @@ class FilterModal extends ConsumerWidget {
                               title: Text(
                                 AppStrings.continent,
                                 style: TextStyle(
+                                    fontFamily: "Axiforma",
                                     color: isDarkMode
                                         ?AppColors.whiteColor
                                         : AppColors.blackColor,
@@ -158,6 +161,7 @@ class FilterModal extends ConsumerWidget {
                                     title: Text(
                                       continent,
                                       style: TextStyle(
+                                          fontFamily: "Axiforma",
                                           color: isDarkMode
                                               ? AppColors.whiteColor
                                               : AppColors.blackColor),
@@ -200,6 +204,7 @@ class FilterModal extends ConsumerWidget {
                               title: Text(
                                 AppStrings.timeZone,
                                 style: TextStyle(
+                                    fontFamily: "Axiforma",
                                     color: isDarkMode
                                         ? AppColors.whiteColor
                                         : AppColors.blackColor,
@@ -242,6 +247,7 @@ class FilterModal extends ConsumerWidget {
                                     title: Text(
                                       timeZone,
                                       style: TextStyle(
+                                          fontFamily: "Axiforma",
                                           color: isDarkMode
                                               ? AppColors.whiteColor
                                               :AppColors.blackColor),
@@ -335,6 +341,7 @@ class FilterModal extends ConsumerWidget {
                                 child: Text(
                                   AppStrings.resetButtonText,
                                   style: TextStyle(
+                                    fontFamily: "Axiforma",
                                     color: isDarkMode
                                         ? AppColors.whiteColor
                                         : AppColors.blackColor,
@@ -362,6 +369,7 @@ class FilterModal extends ConsumerWidget {
                                 child: Text(
                                   AppStrings.showResultButtonText,
                                   style: TextStyle(
+                                      fontFamily: "Axiforma",
                                       color: AppColors.whiteColor,
                                       fontWeight: FontWeight.w400,
                                       fontSize: 16),

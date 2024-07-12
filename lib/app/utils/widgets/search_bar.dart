@@ -24,6 +24,7 @@ class MySearchBar extends ConsumerWidget {
         ),
         hintText: AppStrings.searchText,
         hintStyle: TextStyle(
+            fontFamily: "Axiforma",
             color: isDarkMode ? AppColors.whiteColor : AppColors.textFieldDarkColor),
         filled: true,
         fillColor: isDarkMode ? AppColors.hintIconDarkColor : AppColors.hintIconLightColor,

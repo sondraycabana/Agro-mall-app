@@ -1,9 +1,7 @@
 import 'package:agro_mall/app/constants/app_colors/app_colors.dart';
-import 'package:agro_mall/app/utils/extensions/size_box_extension.dart';
 import 'package:agro_mall/app/utils/widgets/labeled_value_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../utils/widgets/carousel.dart';
 import '../model/country.dart';
 
@@ -17,13 +15,14 @@ class CountryDetailPage extends ConsumerWidget {
     final isDarkMode = ref.watch(themeProvider);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: isDarkMode ? Color(0xFF000F24) : Colors.white,
+        backgroundColor: isDarkMode ? AppColors.navyBlueColor: AppColors.whiteColor,
         title: Text(country.name,
             style: TextStyle(
-              color: isDarkMode ? Colors.white : Color(0xFF000F24),
+              fontFamily: "Axiforma",
+              color: isDarkMode ? AppColors.whiteColor: AppColors.navyBlueColor,
             )),
         iconTheme: IconThemeData(
-          color: isDarkMode ? Colors.white : Color(0xFF000F24),
+          color: isDarkMode ? Colors.white : AppColors.navyBlueColor,
         ),
       ),
       body:

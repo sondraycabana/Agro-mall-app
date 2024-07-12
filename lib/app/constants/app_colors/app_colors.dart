@@ -10,10 +10,6 @@ abstract class AppColors {
   static const Color languageFilterBoxContainerBorderColor = Color(0XFFA9B8D4);
   static const Color radioButtonDarkColor = Color(0XFF001637);
 
-
-
-
-
   static const Color hintDarkColor = Color(0xFF667085);
   static const Color buttonDarkBorderColor = Color(0XFF1C1917);
   static const Color buttonOrangeColor = Color(0XFFFF6C00);

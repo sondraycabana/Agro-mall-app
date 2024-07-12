@@ -23,7 +23,8 @@ class LanguageSelector extends ConsumerWidget {
       height: 40,
       width: 73,
       decoration: BoxDecoration(
-        border: Border.all(width: 0.8, color: AppColors.languageFilterBoxContainerBorderColor),
+        border: Border.all(
+            width: 0.8, color: AppColors.languageFilterBoxContainerBorderColor),
         borderRadius: const BorderRadius.all(Radius.circular(4)),
         boxShadow: const [
           BoxShadow(
@@ -32,7 +33,7 @@ class LanguageSelector extends ConsumerWidget {
             offset: Offset(0, 1),
           )
         ],
-        color: isDarkMode ? AppColors.navyBlueColor :AppColors.whiteColor,
+        color: isDarkMode ? AppColors.navyBlueColor : AppColors.whiteColor,
       ),
       child: GestureDetector(
         onTap: () => _showLanguageSelectionModal(context, ref, isDarkMode),
@@ -40,11 +41,16 @@ class LanguageSelector extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon(Icons.language,
-                color: isDarkMode ? AppColors.whiteColor : AppColors.blackColor),
+                color:
+                    isDarkMode ? AppColors.whiteColor : AppColors.blackColor),
             8.w,
-            Text(selectedLanguage,
-                style: TextStyle(
-                    color: isDarkMode ? AppColors.whiteColor : AppColors.blackColor),)
+            Text(
+              selectedLanguage,
+              style: TextStyle(
+                  fontFamily: "Axiforma",
+                  color:
+                      isDarkMode ? AppColors.whiteColor : AppColors.blackColor),
+            )
           ],
         ),
       ),
@@ -78,6 +84,7 @@ class LanguageSelector extends ConsumerWidget {
                   Text(
                     AppStrings.languageText,
                     style: TextStyle(
+                        fontFamily: "Axiforma",
                         color: isDarkMode ? Colors.white : Colors.black,
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
@@ -104,25 +111,26 @@ class LanguageSelector extends ConsumerWidget {
                           title: Text(
                             language,
                             style: TextStyle(
+                                fontFamily: "Axiforma",
                                 fontSize: 16,
                                 color:
-                                isDarkMode ? Colors.white : Colors.black),
+                                    isDarkMode ? Colors.white : Colors.black),
                           ),
                           trailing: Radio<String>(
                             activeColor: isDarkMode
                                 ? AppColors.whiteColor
                                 : AppColors.radioButtonDarkColor,
                             fillColor: MaterialStateProperty.resolveWith<Color>(
-                                    (Set<MaterialState> states) {
-                                  if (states.contains(MaterialState.selected)) {
-                                    return isDarkMode
-                                        ? AppColors.whiteColor
-                                        : AppColors.radioButtonDarkColor;
-                                  }
-                                  return isDarkMode
-                                      ? AppColors.whiteColor
-                                      : AppColors.radioButtonDarkColor;
-                                }),
+                                (Set<MaterialState> states) {
+                              if (states.contains(MaterialState.selected)) {
+                                return isDarkMode
+                                    ? AppColors.whiteColor
+                                    : AppColors.radioButtonDarkColor;
+                              }
+                              return isDarkMode
+                                  ? AppColors.whiteColor
+                                  : AppColors.radioButtonDarkColor;
+                            }),
                             value: language,
                             groupValue: selectedLanguage,
                             onChanged: (value) {
@@ -137,7 +145,7 @@ class LanguageSelector extends ConsumerWidget {
                     );
                   },
                   loading: () =>
-                  const Center(child: CircularProgressIndicator()),
+                      const Center(child: CircularProgressIndicator()),
                   error: (error, stack) {
                     if (kDebugMode) {
                       print('Error: $error');
