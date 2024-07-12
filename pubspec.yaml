@@ -66,10 +66,10 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-  fonts:
-    - family: Axiforma
-      fonts:
-        - asset: fonts/Axiforma/Axiforma-Black.eot,Axiforma-Black.ttf
+#  fonts:
+#    - family: Axiforma
+#      fonts:
+#        - asset: fonts/Axiforma/Axiforma-Black.eot,Axiforma-Black.ttf
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
